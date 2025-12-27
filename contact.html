@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Real Max – Связаться</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <!-- Yuqori panel (telefon, telegram, til) -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <span class="topbar-phone">+998 90 000 00 00</span>
+        <span class="topbar-sep">•</span>
+        <a href="#" class="topbar-link" data-i18n="topbar_telegram">Написать в Telegram</a>
+      </div>
+      <div class="topbar-right">
+        <button class="lang-chip" data-lang="uz">Uz</button>
+        <button class="lang-chip active" data-lang="ru">Ru</button>
+        <button class="lang-chip" data-lang="en">En</button>
+      </div>
+    </div>
+  </div>
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Real Max">
+        <span class="logo-mark">R</span>
+        <span class="logo-text">Real Max</span>
+      </a>
+
+      <nav class="nav-main" aria-label="Main navigation">
+        <a class="nav-link" href="index.html" data-i18n="nav_home">Главная</a>
+        <a class="nav-link" href="about.html" data-i18n="nav_about">О компании</a>
+        <a class="nav-link" href="catalog.html" data-i18n="nav_catalog">каталог</a>
+        <a class="nav-link" href="partners.html" data-i18n="nav_partners">Партнёры</a>
+        <a class="nav-link nav-link-active" href="contact.html" data-i18n="nav_contact">Связаться</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <div>
+        <div class="page-chip" data-i18n="contact_chip">Контакты</div>
+        <h1 class="page-title" data-i18n="contact_title">Свяжитесь с нами</h1>
+        <p class="page-sub" data-i18n="contact_sub">
+          Оставьте заявку — мы перезвоним и отправим каталог/цены. Для бизнеса: опт, регулярные поставки, брендинг.
+        </p>
+      </div>
+
+      <div class="page-hero-card">
+        <div class="page-hero-card-top"></div>
+        <div class="page-hero-card-body">
+          <div class="page-hero-card-title" data-i18n="contact_card_title">Быстрый ответ</div>
+          <div class="page-hero-card-text" data-i18n="contact_card_text">
+            Обычно отвечаем в течение рабочего дня. Можете также написать в Telegram.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h2 class="contact-h2" data-i18n="contact_form_title">Форма заявки</h2>
+          <p class="contact-p" data-i18n="contact_form_sub">Заполните поля — мы свяжемся с вами.</p>
+
+          <form class="form" id="contactForm">
+            <div class="form-row">
+              <label class="form-label" for="fullName" data-i18n="contact_name_label">Имя и фамилия</label>
+              <input class="form-input" id="fullName" name="fullName" type="text" placeholder="Иван Иванов" required>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label" for="phone" data-i18n="contact_phone_label">Телефон</label>
+              <input class="form-input" id="phone" name="phone" type="tel" placeholder="+998 90 123 45 67" required>
+              <div class="form-hint" data-i18n="contact_phone_hint">Формат: +998 XX XXX XX XX</div>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label" for="message" data-i18n="contact_msg_label">Сообщение</label>
+              <textarea class="form-textarea" id="message" name="message" rows="4" placeholder="Например: нужен прайс и каталог"></textarea>
+            </div>
+
+            <button class="btn primary full" type="submit" data-i18n="contact_submit">Отправить</button>
+            <div class="form-note" data-i18n="contact_note">Это демо-форма. Для реальной отправки подключим Telegram/Email.</div>
+          </form>
+        </div>
+
+        <div class="contact-card contact-card-side">
+          <h2 class="contact-h2" data-i18n="contact_info_title">Контактная информация</h2>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-info-k" data-i18n="contact_info_phone_k">Телефон</div>
+              <div class="contact-info-v">+998 90 000 00 00</div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-k">Email</div>
+              <div class="contact-info-v">info@realmax.uz</div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-k" data-i18n="contact_info_city_k">Город</div>
+              <div class="contact-info-v" data-i18n="footer_city">г. Ташкент</div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-k">Telegram</div>
+              <div class="contact-info-v">
+                <a href="#" class="news-link" data-i18n="contact_info_tg_link">Написать</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mini-card">
+            <div class="mini-card-title" data-i18n="contact_side_title">Что можем отправить</div>
+            <ul class="bullet" style="margin-top:8px;">
+              <li data-i18n="contact_side_li1">• Каталог (PDF)</li>
+              <li data-i18n="contact_side_li2">• Оптовые цены</li>
+              <li data-i18n="contact_side_li3">• Условия сотрудничества</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>Real Max</h4>
+        <p data-i18n="footer_about">Производитель пластиковых контейнеров и одноразовой посуды.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer_company">Компания</h4>
+        <a href="about.html" data-i18n="footer_about_link">О нас</a>
+        <a href="partners.html" data-i18n="footer_partners_link">Партнёры</a>
+        <a href="contact.html" data-i18n="footer_contacts">Контакты</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer_contact">Связь</h4>
+        <p data-i18n="footer_tel">Тел: +998 90 000 00 00</p>
+        <p data-i18n="footer_email">Email: info@realmax.uz</p>
+        <p data-i18n="footer_city">г. Ташкент</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span data-i18n="footer_copy">© Real Max, 2025. Все права защищены.</span>
+        <span data-i18n="footer_design">Website design: Siz</span>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
